@@ -1,0 +1,331 @@
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  /* 내용을 중앙정렬 하기위해 flex 사용 */
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  /* 좌우 기준 중앙정렬 */
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  /* 위아래 기준 중앙정렬 */
+  align-items: center;
+}
+
+.haggendaz,
+.library,
+.nike,
+.react {
+  width: 97%;
+  height: 100%;
+  /*   margin-top: 200px; */
+  /*   background-color: rgb(194, 0, 0); */
+  position: relative;
+}
+
+/* 프로젝트 종류 */
+
+.container div h2 {
+  font-weight: bold;
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  font-size: 2.3em;
+}
+
+.cntr01 div h2 {
+  color: #600624;
+}
+
+.cntr02 div h2 {
+  color: #01c864;
+}
+
+.cntr03 div h2 {
+  color: #f28526;
+}
+
+.cntr04 div h2 {
+  color: #26a0f2;
+}
+
+/* 프로젝트명 */
+.container div h3 {
+  font-weight: bold;
+  position: absolute;
+  top: 130px;
+  left: 65px;
+  font-size: 1.3em;
+}
+
+.hagen_text {
+  color: #f37c92;
+}
+
+.lib_text {
+  color: #3f3b3a;
+}
+
+.res_text,
+.react_text {
+  color: #000000;
+}
+
+
+
+.mockup {
+  z-index: 10;
+  width: 540px;
+  height: 360px;
+  position: absolute;
+  top: 60px;
+  left: 113px;
+  overflow: hidden;
+}
+
+body>div>div.swiper-wrapper>div.swiper-slide.swiper-slide-active>div>div.mockupIndex>img {
+  z-index: 100000;
+}
+
+/* 목업 pc 옆 글씨 세트로 움직이기 */
+.pro_info {
+  width: 500px;
+  height: 500px;
+  /*   background: skyblue; */
+  position: absolute;
+  top: 220px;
+  right: 18px;
+  line-height: 40px;
+  z-index: 50;
+}
+
+  div.library > div.pro_info{
+  top: 180px;
+}
+div.react > div.pro_info{
+  top: 240px;
+  right: 33px;
+}
+
+
+
+.pro_info ul {
+  margin-top: 30px;
+}
+
+.pro_info ul li span:nth-child(1) {
+  display: inline-block;
+  font-weight: 600;
+  width: 100px;
+  /*   float: left; */
+/*   background-color: rgba(226, 232, 213, 0.7); */
+background-color: white;
+}
+
+.pro_info ul li span:nth-child(2) {
+  width: 360px;
+  display: inline-block;
+  font-weight: bold;
+/*   background-color: rgb(236, 43, 111); */
+  text-align: left;
+}
+
+ 
+
+/* 목업배경화면 */
+.moBg {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  bottom: 145px;
+  z-index: 3;
+  background-color: #fde3e2;
+  top: 170px;
+}
+
+.mockBg_jq {
+  background-color: #eff4ee;
+}
+
+.mockBg_res {
+  background-color: rgb(215, 215, 215);
+}
+
+/* mockup */
+
+.mockup_wrap {
+  width: 100%;
+  margin: 0px auto;
+  height: 900px;
+  overflow: hidden;
+}
+
+.mockup_wrap .scroll {
+  position: relative;
+  width: 1280px;
+  height: 980px;
+  margin: 0 auto;
+}
+
+/* 목업 pc 위치  */
+.mockup_wrap .scroll .css_img,
+.mockup_wrap .scroll .jq_img,
+.mockup_wrap .scroll .res_img {
+  width: 869px;
+  height: 497px;
+  position: relative;
+  left: -90px;
+  top: 222px;
+  /*   margin-top: 30px; */
+  float: left;
+  z-index: 100;
+}
+
+ 
+
+/* 태블릿 목업 위치*/
+.tablet_img {
+  width: 869px;
+  height: 400px;
+  position: relative;
+  left: -214px;
+  top: -323px;
+  /*   margin-top: 30px; */
+  float: left;
+  z-index: 200;
+}
+
+/* 반응형 모바일 목업 위치*/
+.mobile_img {
+  width: 869px;
+  height: 497px;
+  position: relative;
+  left: 234px;
+  top: -660px;
+  z-index: 200;
+}
+
+/* 리액트 모바일 목업 위치 */
+.react_img>.mobile_img {
+  width: 869px;
+  height: 497px;
+  position: relative;
+  left: -88px;
+  top: 310px;
+  z-index: 200;
+}
+
+.mockup_wrap .scroll .css_img .project_css,
+.mockup_wrap .scroll .jq_img .project_jquery,
+.mockup_wrap .scroll .res_img .project_res,
+.mockup_wrap .scroll .res_img .project_resM
+ {
+  position: absolute;
+  width: 869px;
+  height: 305px;
+  top: 12px;
+  left: -70px;
+  overflow: hidden;
+}
+
+/* 태블릿 목업 내용물 위치  */
+.mockup_wrap .scroll .res_img .project_resT {
+  position: absolute;
+  width: 451px;
+  height: 288px;
+  top: 24px;
+  left: 88px;
+  overflow: hidden;
+}
+
+/* 모바일 목업 내용물 위치  */
+.mockup_wrap .scroll .res_img .project_resM,
+.mockup_wrap .scroll .react_img .project_react{
+  position: absolute;
+  height: 245px;
+  top: 406px;
+  left: 135px;
+  width: 358px;
+  overflow: hidden;
+}
+.mockup_wrap .scroll .react_img .project_react{
+  top: 8px;
+  border-radius: 3% ;
+}
+
+
+.mockup_wrap .scroll .css_img .project_css a,
+.mockup_wrap .scroll .jq_img .project_jquery a,
+.mockup_wrap .scroll .res_img .project_res a,
+.mockup_wrap .scroll .react_img .project_react a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.mockup_wrap .scroll .css_img .project_css img,
+.mockup_wrap .scroll .jq_img .project_jquery img,
+.mockup_wrap .scroll .res_img .project_res img,
+.mockup_wrap .scroll .res_img .project_resT img,
+.mockup_wrap .scroll .res_img .project_resM img,
+.mockup_wrap .scroll .react_img .project_react img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
+.myfeel {
+  /*   font-family: "Montserrat", sans-serif; */
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: 20px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* 말풍선 */
+/*  div.pro_info > ul > li > span > a:hover  {
+ text-decoration: underline;
+} */
+ div.pro_info > ul > li > span > a:hover .ballon{
+  display: block;
+ }
+
+ 
+  .ballon {
+  display: none;
+  position: absolute;
+  width: 205px;
+  height: 40px;
+  left: 448px;
+  bottom: 62px;
+  background: #484848;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 12.8px;
+}
+ 
+
+ .ballon:after {
+  border-top: 10px solid #484848;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 160px;
+}  
+
+.crossbrowsing> img{
+  line-height: 20px;
+}
